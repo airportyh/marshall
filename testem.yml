@@ -1,0 +1,10 @@
+framework: mocha
+src_files:
+- "**/*.js"
+ignore_src_files:
+- "build/*.js"
+serve_files:
+- "build/*.js"
+before_tests: browserify tests.js -o build/tests.js
+launch_in_dev:
+- chrome
